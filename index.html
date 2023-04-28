@@ -17,7 +17,16 @@
 </head>
 
 <body>
-
+  <!--<div class="backdrop" data-modal="">
+    <div class="modal">
+      <a href="" class="close" data-modal-close="">
+        <svg width="10" heiht="10">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </a>
+    </div>
+  </div>     por que no me cierra    -->
+  
   <header class="container horizontal-ul header">
     <nav>
       <a href="#" class="webstudio">Web<span>Studio </span> </a>
@@ -47,6 +56,7 @@
   <main>
     <section class="fondo ">
       <h1 class="title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+      <div class="principal-color__background"></div>
       <button class="mybutton-1">Request our service</button>
     </section>
 
@@ -97,14 +107,29 @@
       </ul>
     </section>
 
-    <section class="section container">
+<!-- what we do -->
+
+<section class="section container">
       <h2 class="subtitle-sections">What we do</h2>
       <ul class="list-style  content-center">
-        <li class="card-studio"><img src="./images/imagen1.jpg" alt="servicio 1"></li>
-        
-        <li class="card-studio"><img src="./images/imagen2.jpg" alt="Servicio 2"></li>
 
-        <li class="card-studio"><img src="./images/imagen3.jpg" alt="Servicio 3"></li>
+        <li class="card-wedo"><img src="./images/imagen1.jpg" alt="servicio 1">
+          
+            <p class="text-product">DESKTOP APPS</p>
+          
+         </li>
+        
+        <li class="card-wedo"><img src="./images/imagen2.jpg" alt="Servicio 2">
+          
+           <p class="text-product">Mobile APPS</p>
+          
+        </li>
+
+        <li class="card-wedo"><img src="./images/imagen3.jpg" alt="Servicio 3">
+          
+          <p class="text-product">DESIGN SOLUTIONS</p>
+          
+        </li>
       </ul>
     </section>
 
@@ -337,7 +362,7 @@
   <ul class="horizontal-ul container">
     <li>
       <div>
-        <a href="#" class="webstudio-footer">Web<span1>Studio </span1> </a>
+        <a href="#" class="webstudio-footer">Web<span id="study">Studio </span1> </a>
         <address class="address">
           <ul class="list-style">
             <li>
@@ -393,7 +418,7 @@
     </li>
   </ul>
 </footer>
-
+<script src="./js/modal.js"></script>
 </body>
 
 </html>
