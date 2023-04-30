@@ -146,8 +146,8 @@ span { color: #212121;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    /*font-size: 14px;
-    line-height: 16px; para la tarea 3 */
+    font-size: 14px;
+    /*line-height: 16px; para la tarea 3 */
     
     color: #2196F3;
 }/* CSS link NAV (azul) */
@@ -168,8 +168,8 @@ span { color: #212121;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    /*font-size: 14px;
-    line-height: 16px;  para la tarea 3 */ 
+    font-size: 14px;
+    /*line-height: 16px;  para la tarea 3 */ 
     color: #2196F3;}   /* CSS link navegacion  toca con el mismo nombre de la clase pero agregando otra palabra nav(azul) */
 
 .contacs{
@@ -190,7 +190,7 @@ span { color: #212121;
 .link{
    
     font-weight: 500;
-    /*font-size: 14px;*/
+    font-size: 14px;
     line-height: 1.18;  /* 19px/16px= 1.18  */
     letter-spacing: 0.02em;
     color: #757575;
@@ -361,7 +361,7 @@ span { color: #212121;
     }
 
 body {
-    /*font-size: 14px;*/
+    font-size: 14px;
     font-family: 'Roboto', 'sans-serif';
     letter-spacing: 0.03em;
     color: #757575;
