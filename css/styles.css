@@ -190,7 +190,7 @@ span { color: #212121;
 .link{
    
     font-weight: 500;
-    font-size: 14px;
+    /*font-size: 14px;*/
     line-height: 1.18;  /* 19px/16px= 1.18  */
     letter-spacing: 0.02em;
     color: #757575;
@@ -205,28 +205,31 @@ span { color: #212121;
 
 
 /*section button  web html principal*/
-.mybutton-1 {
+.button-principal {
    
     display: flex;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.87;  /* 30px/16px= 1.87  */
-    color: #FFFFFF;
-    padding: 10px 32px;
-    background: #2196F3;
+    line-height: 1.875em;
+    background-color: var(--color-selected);
+    color: var(--secundary-color);
     border-radius: 4px;
     border: none;
     cursor: pointer;
     margin-left: auto;
     margin-right: auto;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 1;
 
     }
        
-.mybutton-1:hover,
-.mybutton-1:focus
+.button-principal:hover,
+.button-principal:focus
 {
     background-color: var(--go-service);
     
@@ -358,7 +361,7 @@ span { color: #212121;
     }
 
 body {
-    font-size: 14px;
+    /*font-size: 14px;*/
     font-family: 'Roboto', 'sans-serif';
     letter-spacing: 0.03em;
     color: #757575;
@@ -774,7 +777,7 @@ div {
     
 }
 /* se debe colocar img al div class img-portfolio
-para quitar la linea de mas es un truco 
+para quitar la linea azul de mas es un truco 
 de experiencia*/
 
 .img-portfolios img{
@@ -812,16 +815,19 @@ transformacion*/
     height: auto;
   }
 
-  /* barra de navegación
-  solicite nuestro servicio 
-  .principal-color__background {
+  /* barra de navegación solicite nuestro servicio 
+  VENTANA MODAL*/
+
+  /*.principal-color_background {
     background-color: rgba(47, 48, 58, 0.4);
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     z-index: 0;
-}
+}*/
+
+
 
 .backdrop {
     background-color: rgba(0, 0, 0, 0.2);
@@ -836,6 +842,23 @@ transformacion*/
     align-items: center;
 }
 
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+
+@keyframes open-modal {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
 .modal {
     background-color: rgba(255, 255, 255, 1);
     position: absolute;
@@ -844,6 +867,7 @@ transformacion*/
     animation-duration: 1500ms;
     animation-name: open-modal;
     animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .close {
@@ -856,18 +880,6 @@ transformacion*/
     justify-content: center;
     right: 8px;
     top: 8px;
+    
 }
 
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-html {
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -moz-tab-size: 4;
-    tab-size: 4;
-}
-*/
